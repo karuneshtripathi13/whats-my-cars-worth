@@ -1,10 +1,11 @@
 import re
 from flask import Flask
 from flask.globals import request
+from flask.helpers import send_from_directory
 from flask.json import jsonify
 import tensorflow as tf
 from tensorflow import keras
-from flask_cors import CORS
+from flask_cors import CORS,cross_origin
 from conversion import *
 import locale
 import numpy as np
@@ -19,9 +20,10 @@ model=keras.Sequential([
 ])
 model.compile(optimizer='adam',loss='mean_squared_error')
 model.load_weights('model.h5')
-app = Flask(__name__)
+app = Flask(__name__,static_folder='client/build')
 CORS(app)
 @app.route("/getpred",methods=['POST'])
+@cross_origin()
 def getpred():
     content = request.get_json()
     year=float(content['year'])
@@ -51,5 +53,9 @@ def getpred():
     locale.setlocale(locale.LC_NUMERIC, 'hi_IN')
     result=f'Rs. {st} - Rs. {ed}'
     return jsonify({"result":result})
+@app.route('/')
+@cross_origin()
+def serve():
+    return send_from_directory(app.static_folder,'index.html')
 if __name__=='__main__':
     app.run(debug=True,port=5000)
