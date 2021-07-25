@@ -1,0 +1,165 @@
+
+  .linkedin{
+    border-radius: 1vw;
+    color: white;
+    padding: 0.3vw;
+    margin:1vw;
+  }
+  .linkedin:hover{
+    color:gold
+  }
+  .github{
+    border-radius: 1vw;
+    color: white;
+    padding: 0.3vw;
+    margin:1vw;
+  }
+  .github:hover{
+    color:gold
+  }
+  .twitter{
+    border-radius: 1vw;
+    color: white;
+    padding: 0.3vw;
+    margin:1vw;
+  }
+  .twitter:hover{
+    color:gold
+  }
+  .insta{
+    border-radius: 1vw;
+    color: white;
+    padding: 0.3vw;
+    margin:1vw;
+  }
+  .insta:hover{
+    color:gold
+  }
+  .youtube{
+    border-radius: 1vw;
+    color: white;
+    padding: 0.3vw;
+    margin:1vw;
+  }
+  .youtube:hover{
+    color:gold
+  }
+  .gmail{
+    border-radius: 1vw;
+    color: white;
+    padding: 0.3vw;
+    margin:1vw;
+    margin-left: 1vw;
+  }
+  .gmail:hover{
+    color:gold
+  }
+  .socialmedia{
+   background-color: black;
+   text-align: center;
+   align-items: center;
+   justify-content: center;
+  }
+  .copyrights{
+    padding: 1vw;
+    color: darkgrey;
+    margin-top: 3vw;
+    font-size: 1.145vw;
+  }
+  .followme{
+    color: gold;
+    font-size: 2vw;
+    font-weight: 600;
+    padding: 1vw;
+  }
+  .upp{
+    transition: 0.2s;
+  }
+  .upp:hover{
+    transform: translateY(-15%);
+  }
+  .contactdetails{
+    margin-top: 2vw;
+    color: gray;
+    display: flex;
+  }
+  .address{
+    margin-top: 3vw;
+    width: 50vw;
+    font-size: 1.2vw;
+  }
+  .address:hover{
+    color: white;
+  }
+  .numbermail{
+    margin-top: 3vw;
+    width: 50vw;
+    font-size: 1.2vw;
+  }
+  .numbermail:hover{
+    color: white;
+  }
+  .messageappear{
+    background-color: black;
+    padding: 1vw;
+    color: white;
+    border-radius: 1vw;
+    width: fit-content;
+    border: solid 2px grey;
+    margin-left: 35vw;
+    margin-top: 0.5vw;
+    font-size: 1.2vw;
+  }
+  .messagedisappear{
+    display: none;
+  }
+  @media only screen and (max-width:990px) {
+    .contactheading{
+      font-size: 7vw;
+    }
+    .formip{
+      font-size: 4vw;
+      width: 60vw;
+      border-radius: 2vw;
+      margin: 2vw;
+      padding: 1vw;
+    }
+    .sendbtn{
+      font-size: 4.5vw;
+      margin-top: 2vw;
+      padding: 2vw;
+      padding-left: 4vw;
+    padding-right: 4vw;
+    border-radius: 1.5vw;
+    }
+    .messageappear{
+      font-size: 4.5vw;
+      margin-left: 13vw;
+      padding: 2vw;
+      margin-top: 2vw;
+    }
+    .icons{
+      padding: 2vw;
+      height: fit-content;
+      margin-top: 5vw;
+    }
+    .numbermail{
+      font-size: 3vw;
+    }
+    .address{
+      font-size: 3vw;
+    }
+    .add{
+      margin-left: 0 !important;
+    }
+    .socialmedia{
+      margin-top: 5vw;
+      padding: 3vw;
+    }
+    .followme{
+      font-size: 4vw;
+    }
+    .copyrights{
+      font-size: 3vw;
+    }
+  }

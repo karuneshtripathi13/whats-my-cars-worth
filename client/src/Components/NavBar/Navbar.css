@@ -1,0 +1,14 @@
+.navwrapper{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    background-color: rgb(37, 37, 37);
+}
+.heading{
+    font-size: 3vw;
+    color: gold;
+    font-weight: 600;
+}

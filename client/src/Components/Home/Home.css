@@ -1,0 +1,83 @@
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    margin-top: 1vw;
+}
+.background{
+    height: 82.5vh;
+}
+.background::after{
+    background-image: url('./car1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+    filter: blur(2px);
+}
+.item{
+    display: block;
+    margin: auto;
+    padding: 0.5vw;
+    width: 20vw;
+    text-align: center;
+    margin-top: 1.5vw;
+    border: solid 0.25vw black;
+    font-size: 1.1vw;
+    font-weight: 600;
+    border-radius: 0.3vw;
+}
+.dropmenus{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: inline;
+    width: 50vw;
+}
+.numerical{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: inline;
+    width: 50vw;
+}
+.hidden{
+    display: none;
+}
+.show{
+    justify-content: center;
+    align-items: center;
+    display: block;
+    margin: auto;
+    margin-top: 2vw;
+    text-align: center;
+    width: fit-content;
+    padding: 1.5vw;
+    padding-left: 7vw;
+    padding-right: 7vw;
+    background-color: rgb(15,15,15);
+    border: solid 0.3vw gold;
+    color: gold;
+    font-size: 2vw;
+    border-radius: 1vw;
+    font-weight: 600;
+}
+.submitbtn{
+    margin-top: 4vw;
+    padding: 0.7vw;
+    width: 10vw;
+    background-color: black;
+    border-radius: 0.3vw;
+    font-size: 1vw;
+    font-weight: 600;
+    color: gold;
+    border: solid 0.25vw gold;
+}
+.submitbtn:hover{
+    background-color: rgb(37,37,37);
+}
